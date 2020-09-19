@@ -87,6 +87,13 @@ input::placeholder {
   font-size: 10px;
   margin-bottom: 15px;
 }
+.coded-by {
+  display: block;
+  background-color: var(--neutral-color-violet-verydark);
+  text-align: center;
+  color: var(--primary-color-violet-dark);
+  padding-bottom: 10px;
+}
 
 /*---------------------------------------------------------------*/
 /*----------------------------NAVBAR-----------------------------*/
