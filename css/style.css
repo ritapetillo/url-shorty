@@ -34,6 +34,10 @@ body {
 main {
   width: 100vw;
   overflow-x: hidden;
+  max-width: 1440px;
+}
+section {
+  max-width: 1440px;
 }
 a {
   text-decoration: none;
