@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#" class="nav__logo">Shortly</a>
+      
+      <div class="nav__links">
+        <a href="#" class="nav__links-item">Features</a>
+        <a href="#" class="nav__links-item">Pricing</a>
+        <a href="#" class="nav__links-item">Resurces</a>
+      </div>
+      <div class="nav__auth">
+        <a href="#" class="nav__auth-item">Login</a>
+        <a href="#" class="btn-cta btn-round btn-auth">Sign Up</a>
+      </div>
+      <div class="nav__mobile menu__hidden">
+        <div class="nav__mobile-links">
+          <a href="#" class="nav__links-item">Features</a>
+          <a href="#" class="nav__links-item">Pricing</a>
+          <a href="#" class="nav__links-item">Resurces</a>
+        </div>
+        <div class="nav__mobile-auth">
+          <a href="#" class="nav__auth-item">Login</a>
+          <a href="#" class="btn-cta btn-round btn-auth">Sign Up</a>
+        </div>
+      </div>
+      <a id="burger"><div class="nav__burger"></div></a>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="hero__text">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <a href="#" class="btn-cta btn-round">Get Started</a>
+        </div>
+        <div class="hero__image">
+          <img src="/images/illustration-working.svg" alt="" />
+        </div>
+      </section>
+      <section class="urlForm" id="url-append">
+        <div class="urlForm__container-form">
+          <form id="urlForm__form">
+            <div>
+            <input
+              type="text"
+              name="url"
+              id="url-input"
+              class=""
+              placeholder="Shorten a link here..."
+            />
+            <span  id="error-message" class="hidden">Please add a valid link</span>
+          </div>
+            <!-- <small id="urlForm-error" class="error-message"
+              >There is an error</small
+            > -->
+          
+
+            <button type="submit" id="url-submit" class="btn-cta btn-submit">
+              Shorten it!
+            </button>
+          </form>
+        </div>
+        
+      </section>
+      <section class="stats">
+        <div class="stats__container">
+          <div class="stats__header">
+            <h2>Advanced Statistics</h2>
+            <p>
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+          <div class="stats__box">
+            <div class="stats__box-icon">
+              <img src="/images/icon-brand-recognition.svg" alt="brand" />
+            </div>
+            <h3>Brand Recognition</h3>
+            <p>
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </div>
+          <div class="stats__box line">
+            <div class="stats__box-icon">
+              <img
+                src="/images/icon-detailed-records.svg"
+                alt="detailed-record"
+              />
+            </div>
+            <h3>Detailed Records</h3>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </div>
+          <div class="stats__box line">
+            <div class="stats__box-icon">
+              <img
+                src="/images/icon-fully-customizable.svg"
+                alt="fully-customizable"
+              />
+            </div>
+            <h3>Fully Customizable</h3>
+            <p>
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="boost">
+        <h1>Boost your links today</h1>
+        <a href="#" class="btn-cta btn-round">Get Started</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="#">Shortly</a>
+      </div>
+      <div class="footer__links">
+        <h4>Features</h4>
+        <a href="#">Link Shortening</a>
+        <a href="#">Branded Links</a>
+        <a href="#">Analytics</a>
+      </div>
+      <div class="footer__links">
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer__links">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Our Team</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer__socials">
+        <img src="/images/icon-facebook.svg" alt="facebook-icon" />
+        <img src="/images/icon-twitter.svg" alt="twitter-icon" />
+        <img src="/images/icon-pinterest.svg" alt="pinterest-icon" />
+        <img src="/images/icon-instagram.svg" alt="instagram-icon" />
+      </div>
+      </div>
+    </footer>
+    <div>      Coded by <a href="#">RitaPee</a>.
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
