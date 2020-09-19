@@ -34,11 +34,16 @@ body {
 main {
   width: 100vw;
   overflow-x: hidden;
-  max-width: 1440px;
 }
 section {
-  max-width: 1440px;
 }
+.container {
+  display: grid;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -480,6 +485,7 @@ input::placeholder {
     padding: 40px 40px 0;
     border-radius: 10px;
     width: 80vw;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     background-image: url("/images/bg-shorten-desktop.svg");
@@ -563,7 +569,7 @@ input::placeholder {
     margin-left: auto;
     justify-content: center;
     column-gap: 25px;
-    height: 150vh;
+    height: 900px;
     margin-top: -50px;
   }
   .stats__header {
